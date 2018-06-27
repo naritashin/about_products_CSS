@@ -1,5 +1,6 @@
-const path = require('path');
+const autoprefixer = require('autoprefixer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   mode: 'development',
@@ -17,7 +18,14 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        use: 'vue-loader'
+        use: [
+          {
+            loader: 'vue-loader',
+            options: {
+              postcss: [autoprefixer({ browsers: 'last 2 version' })]
+            }
+          }
+        ]
       },
       {
         test: /.css$/,
