@@ -142,5 +142,100 @@ table {
 
 body {
   background: linear-gradient(175deg, #aef, #6df, 90%, #0ae, 0%, #fcc);
+  box-sizing: border-box;
+  height: 100%;
+  padding: 60px 60px;
+}
+
+h2 {
+  color: #137;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+ul {
+  flex-grow: 1;
+}
+
+li {
+  color: #333;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+li > span {
+  font-weight: bold;
+}
+
+.current {
+  color: #03a;
+  font-weight: bold;
+}
+
+a {
+  color: #f00;
+  text-decoration: none;
+}
+
+.btn {
+  animation: fadein 1.5s forwards;
+  background-color: #0009;
+  bottom: 0;
+  color: #aaa;
+  font-size: 40px;
+  height: 120px;
+  line-height: 120px;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+  width: 50px;
+}
+
+.col-wrap {
+  display: flex;
+  margin-top: 40px;
+}
+
+.contents {
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+.about {
+  color: #ccf;
+  background: #028;
+  border: 1px solid #888;
+  border-radius: 12px;
+  box-sizing: border-box;
+  margin: 40px 6px 0;
+  padding: 12px 6px;
+}
+
+.caution {
+  color: #f00;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

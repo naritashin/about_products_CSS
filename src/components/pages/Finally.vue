@@ -1,23 +1,23 @@
 <template>
   <div>
+    <router-link to="/detail" class="btn prev">&lt;</router-link>
     <svg width="100%" height="100%">
-      <text x="60%" y="50%">About CSS</text>
+      <text x="30%" y="80%">ご静聴ありがとうございました</text>
     </svg>
-    <router-link to="/oneself" class="btn next">></router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Index'
+  name: 'Finally'
 };
 </script>
 
-<style scope>
+<style scoped>
 text {
   animation: title 3s forwards;
   fill: none;
-  font-size: 70px;
+  font-size: 40px;
   stroke: #888;
   stroke-dasharray: 150%;
 }
